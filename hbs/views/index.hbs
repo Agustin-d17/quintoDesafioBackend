@@ -1,0 +1,22 @@
+    <section class="m-5">
+        <h2>Ingrese su producto</h2>
+        <form action="/productos" method="post">
+            <div class="mb-3">
+                <label for="title" class="form-label">Nombre del producto</label><br>
+                <input type="text" class="form-control" id="title" name="title">
+            </div>
+
+            <div class="mb-3">
+                <label for="price" class="form-label">Precio del producto</label><br>
+                <input type="number" class="form-control" id="price" name="price">
+            </div>
+
+            <div class="mb-3">
+                <label for="thumbnail" class="form-label">Url de la imagen</label><br>
+                <input type="text" class="form-control" id="thumbnail" name="thumbnail">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Cargar producto</button>
+            <button class="btn btn-secondary "><a class="nav-link active" href="http://localhost:3002/productos">Ver productos</a></button>
+        </form>
+    </section>
