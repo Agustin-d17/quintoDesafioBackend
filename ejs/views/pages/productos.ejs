@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+</head>
+<body>
+    <section class="m-5">
+        <% if(products.length !== 0) { %>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% products.forEach(product=> { %>
+                        <tr>
+                            <td>
+                                <%= product.title %>
+                            </td>
+                            <td>
+                                $ <%= product.price %>
+                            </td>
+                            <td><img src="<%= product.thumbnail %>" class="w-25 h-auto"></td>
+                        </tr>
+                        <% }); %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <div class="alert alert-danger" role="alert">
+                <p>No se encontraron productos</p>   
+            </div>
+        <% } %>
+    </section>
+    <button class="btn btn-secondary mx-5"><a class="nav-link active" href="http://localhost:3001/">Nuevo producto</a></button>
+
+</body>
+</html>
