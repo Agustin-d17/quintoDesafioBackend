@@ -1,0 +1,2 @@
+Despues de una intensa lucha con los motores de plantillas planteados en el desafio y que vimos en las ultimas clases, llegue a la conclusion de que si dependiera de mi agregar uno a mi proyecto, no elegiria ninguno ya que no se me hicieron muy comodos de trabajar y que prefiero quedarme con una biblioteca como react para desarrollar el lado del cliente puesto que estoy acostumbrado a trabajar el front-end con esta.
+Pero al ser requisito del desafio elegir uno, creo que ejs es la opcion que se me hizo menos tediosa de usar al ser en su mayor parte codigo html. 
